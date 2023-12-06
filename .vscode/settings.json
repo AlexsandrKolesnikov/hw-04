@@ -2,5 +2,8 @@
     "prettier.printWidth": 200,
     "prettier.proseWrap": "never",
     "editor.insertSpaces": true,
-    "editor.defaultFormatter": "aaron-bond.better-comments"
+    "editor.defaultFormatter": "aaron-bond.better-comments",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }

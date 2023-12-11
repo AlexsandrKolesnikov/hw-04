@@ -40,7 +40,7 @@
             </li>
           </ul>
         </nav>
-
+        <!-- Contact list -->
         <ul class="header-contact-list">
           <li class="header-contact-list-item">
             <a class="header-contact-link link" href="mailto:info@devstudio.com">
@@ -60,10 +60,17 @@
 
     <!-- Main -->
     <main class="main">
+      <!-- Section #1 -->
       <section class="main-section-1">
         <div class="container">
-          <h2 class="main-title">Ефективні рішення для вашого бізнесу</h2>
-          <button class="btn" type="button" data-modal-open>Замовити послугу</button>
+          <h2 class="main-title">
+            Ефективні рішення для вашого бізнесу
+          </h2>
+          <button class="btn" type="button" data-modal-open>
+            Замовити послугу
+          </button>
+          
+          <!-- Modal -->
           <div class="backdrop is-hidden" data-modal>
             <div class="modal-wrapper">
               <button class="modal-btn" type="button" data-modal-close>
@@ -71,6 +78,82 @@
                   <use href="sprite.svg#close"></use>
                 </svg>
               </button>
+
+              <!-- Form -->
+              <div>
+                <h2 class="modal-title">
+                Залиште свої дані, ми вам передзвонимо
+                </h2>
+                <form class="modal-form" name="modal-form">
+                  <label class="modal-group">
+                    <span class="modal-label">
+                      Ім'я
+                    </span>
+                    <span>
+                      <svg class="modal-icons" height="18px" width="18px">
+                        <use href="sprite.svg#user"></use>
+                      </svg>
+                      <input
+                        class="modal-input" 
+                        type="text"
+                        id="user-name"
+                        name="user-name"
+                        title="Введіть, будь ласка, ім'я користувача.">
+                    </span>
+                  </label>
+                  <label class="modal-group">
+                    <span class="modal-label">
+                      Телефон
+                    </span>
+                    <span>
+                      <svg class="modal-icons" height="18px" width="18px">
+                        <use href="sprite.svg#phone"></use>
+                      </svg>
+                      <input 
+                        class="modal-input"
+                        type="phone"
+                        id="user-phone"
+                        name="user-phone"
+                        title="Введіть, будь ласка, ваш номер телефону.">
+                    </span>
+                  </label>
+                  <label class="modal-group">
+                    <span class="modal-label">
+                      Пошта
+                    </span>
+                    <span>
+                      <svg class="modal-icons" height="18px" width="18px">
+                      <use href="sprite.svg#email2"></use>
+                      </svg>
+                      <input 
+                        class="modal-input"
+                        type="email"
+                        id="user-email"
+                        name="user-email"
+                        title="Введіть, будь ласка, адресу електронної пошти.">
+                    </span>
+                  </label>
+                  <label >
+                    <span class="modal-label">
+                      Коментар
+                    </span>
+                    <textarea class="modal-coment" name="modal-coment" placeholder="Введіть текст" id="modal-coment" cols="30" rows="10"></textarea>
+                  </label>
+                  <label class="checkbox">
+                    <input 
+                    type="checkbox"
+                    id="modal-checkbox"
+                    name="modal-checkbox">
+                    <span class="modal-label">
+                      Погоджуюся з розсилкою та приймаю Умови договору
+                    </span>
+                    
+                  </label>
+                  <button class="submit-btn" type="submit">
+                    Відправити
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>

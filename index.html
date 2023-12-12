@@ -45,13 +45,17 @@
           <li class="header-contact-list-item">
             <a class="header-contact-link link" href="mailto:info@devstudio.com">
               <svg class="contacts-link-icon-email">
-                <use href="sprite.svg#email"></use></svg>info@devstudio.com
+                <use href="sprite.svg#email"></use>
+              </svg>
+              info@devstudio.com
             </a>
           </li>
           <li class="header-contact-list-item">
             <a class="header-contact-link link" href="tel:+380961111111">
               <svg class="contacts-link-icon-phone">
-                <use href="sprite.svg#telephone"></use></svg>+38 096 111 11 11
+                <use href="sprite.svg#telephone"></use>
+              </svg>
+              +38 096 111 11 11
             </a>
           </li>
         </ul>
@@ -63,95 +67,63 @@
       <!-- Section #1 -->
       <section class="main-section-1">
         <div class="container">
-          <h2 class="main-title">
-            Ефективні рішення для вашого бізнесу
-          </h2>
-          <button class="btn" type="button" data-modal-open>
-            Замовити послугу
-          </button>
-          
+          <h2 class="main-title">Ефективні рішення для вашого бізнесу</h2>
+          <button class="btn" type="button" data-modal-open>Замовити послугу</button>
+
           <!-- Modal -->
           <div class="backdrop is-hidden" data-modal>
             <div class="modal-wrapper">
               <button class="modal-btn" type="button" data-modal-close>
-                <svg width="18px" heught="18px">
+                <svg width="18px" height="18px">
                   <use href="sprite.svg#close"></use>
                 </svg>
               </button>
 
               <!-- Form -->
               <div>
-                <h2 class="modal-title">
-                Залиште свої дані, ми вам передзвонимо
-                </h2>
+                <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
                 <form class="modal-form" name="modal-form">
-                  <label class="modal-group">
-                    <span class="modal-label">
-                      Ім'я
-                    </span>
-                    <span>
-                      <svg class="modal-icons" height="18px" width="18px">
-                        <use href="sprite.svg#user"></use>
-                      </svg>
-                      <input
-                        class="modal-input" 
-                        type="text"
-                        id="user-name"
-                        name="user-name"
-                        title="Введіть, будь ласка, ім'я користувача.">
-                    </span>
-                  </label>
-                  <label class="modal-group">
-                    <span class="modal-label">
-                      Телефон
-                    </span>
-                    <span>
-                      <svg class="modal-icons" height="18px" width="18px">
-                        <use href="sprite.svg#phone"></use>
-                      </svg>
-                      <input 
-                        class="modal-input"
-                        type="phone"
-                        id="user-phone"
-                        name="user-phone"
-                        title="Введіть, будь ласка, ваш номер телефону.">
-                    </span>
-                  </label>
-                  <label class="modal-group">
-                    <span class="modal-label">
-                      Пошта
-                    </span>
-                    <span>
-                      <svg class="modal-icons" height="18px" width="18px">
-                      <use href="sprite.svg#email2"></use>
-                      </svg>
-                      <input 
-                        class="modal-input"
-                        type="email"
-                        id="user-email"
-                        name="user-email"
-                        title="Введіть, будь ласка, адресу електронної пошти.">
-                    </span>
-                  </label>
-                  <label >
-                    <span class="modal-label">
-                      Коментар
-                    </span>
-                    <textarea class="modal-coment" name="modal-coment" placeholder="Введіть текст" id="modal-coment" cols="30" rows="10"></textarea>
-                  </label>
+                  <fieldset  class="modal-group-container">
+                    <label class="modal-group">
+                      <span class="modal-label"> Ім'я </span>
+                      <span>
+                        <svg class="modal-icons" height="18px" width="18px">
+                          <use href="sprite.svg#user"></use>
+                        </svg>
+                        <input class="modal-input" type="text" id="user-name" name="user-name" autocomplete="off" title="Введіть, будь ласка, ім'я користувача." />
+                      </span>
+                    </label>
+                    <label class="modal-group">
+                      <span class="modal-label"> Телефон </span>
+                      <span>
+                        <svg class="modal-icons" height="18px" width="18px">
+                          <use href="sprite.svg#phone"></use>
+                        </svg>
+                        <input class="modal-input" type="phone" id="user-phone" name="user-phone" autocomplete="off" title="Введіть, будь ласка, ваш номер телефону." />
+                      </span>
+                    </label>
+                    <label class="modal-group">
+                      <span class="modal-label"> Пошта </span>
+                      <span>
+                        <svg class="modal-icons" height="18px" width="18px">
+                          <use href="sprite.svg#email2"></use>
+                        </svg>
+                        <input class="modal-input" type="email" id="user-email" name="user-email" autocomplete="off" title="Введіть, будь ласка, адресу електронної пошти." />
+                      </span>
+                    </label>
+                    <label class="modal-group">
+                      <span class="modal-label"> Коментар </span>
+                      <textarea class="modal-coment" name="modal-coment" placeholder="Введіть текст"  autocomplete="off" id="modal-coment" cols="30" rows="10"></textarea>
+                    </label>
+                  </fieldset>
                   <label class="checkbox">
-                    <input 
-                    type="checkbox"
-                    id="modal-checkbox"
-                    name="modal-checkbox">
-                    <span class="modal-label">
-                      Погоджуюся з розсилкою та приймаю Умови договору
+                    <input type="checkbox" id="modal-checkbox" name="modal-checkbox" />
+                    <span>
+                      Погоджуюся з розсилкою та приймаю 
                     </span>
-                    
+                    <a href="#">Умови договору</a>
                   </label>
-                  <button class="submit-btn" type="submit">
-                    Відправити
-                  </button>
+                  <button class="submit-btn" type="submit">Відправити</button>
                 </form>
               </div>
             </div>
@@ -236,16 +208,24 @@
                 <p class="team-position">Product Designer</p>
                 <ul class="team-icon">
                   <li>
-                    <a href="#"><svg><use href="sprite.svg#instagram"></use></svg></a>
+                    <a href="#"
+                      ><svg><use href="sprite.svg#instagram"></use></svg
+                    ></a>
                   </li>
                   <li>
-                    <a href="#"><svg><use href="sprite.svg#twitter"></use></svg></a>
+                    <a href="#"
+                      ><svg><use href="sprite.svg#twitter"></use></svg
+                    ></a>
                   </li>
                   <li>
-                    <a href="#"><svg><use href="sprite.svg#facebook"></use></svg></a>
+                    <a href="#"
+                      ><svg><use href="sprite.svg#facebook"></use></svg
+                    ></a>
                   </li>
                   <li>
-                    <a href="#"><svg><use href="sprite.svg#linkedin"></use></svg></a>
+                    <a href="#"
+                      ><svg><use href="sprite.svg#linkedin"></use></svg
+                    ></a>
                   </li>
                 </ul>
               </div>
@@ -258,16 +238,24 @@
                 <p class="team-position">Frontend Developer</p>
                 <ul class="team-icon">
                   <li>
-                    <a href="#"><svg><use href="sprite.svg#instagram"></use></svg></a>
+                    <a href="#"
+                      ><svg><use href="sprite.svg#instagram"></use></svg
+                    ></a>
                   </li>
                   <li>
-                    <a href="#"><svg><use href="sprite.svg#twitter"></use></svg></a>
+                    <a href="#"
+                      ><svg><use href="sprite.svg#twitter"></use></svg
+                    ></a>
                   </li>
                   <li>
-                    <a href="#"><svg><use href="sprite.svg#facebook"></use></svg></a>
+                    <a href="#"
+                      ><svg><use href="sprite.svg#facebook"></use></svg
+                    ></a>
                   </li>
                   <li>
-                    <a href="#"><svg><use href="sprite.svg#linkedin"></use></svg></a>
+                    <a href="#"
+                      ><svg><use href="sprite.svg#linkedin"></use></svg
+                    ></a>
                   </li>
                 </ul>
               </div>
@@ -276,45 +264,60 @@
             <li class="team-card">
               <img class="team-photo" src="images/hero/card-1.jpg" alt="card-3" width="270" height="260" />
               <div class="team-text">
-              <h3 class="team-title-name">Микола Тарасов</h3>
-              <p class="team-position">Marketing</p>
-              <ul class="team-icon">
-                <li>
-                  <a href="#"><svg><use href="sprite.svg#instagram"></use></svg></a>
-                </li>
-                <li>
-                  <a href="#"><svg><use href="sprite.svg#twitter"></use></svg></a>
-                </li>
-                <li>
-                  <a href="#"><svg><use href="sprite.svg#facebook"></use></svg></a>
-                </li>
-                <li>
-                  <a href="#"><svg><use href="sprite.svg#linkedin"></use></svg></a>
-                </li>
-              </ul>
+                <h3 class="team-title-name">Микола Тарасов</h3>
+                <p class="team-position">Marketing</p>
+                <ul class="team-icon">
+                  <li>
+                    <a href="#"
+                      ><svg><use href="sprite.svg#instagram"></use></svg
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><svg><use href="sprite.svg#twitter"></use></svg
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><svg><use href="sprite.svg#facebook"></use></svg
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><svg><use href="sprite.svg#linkedin"></use></svg
+                    ></a>
+                  </li>
+                </ul>
               </div>
             </li>
             <!-- team card 4 -->
             <li class="team-card">
               <img class="team-photo" src="images/hero/card-4.jpg" alt="card-4" width="270" height="260" />
               <div class="team-text">
-              <h3 class="team-title-name">Михайло Єрмаков</h3>
-              <p class="team-position">UI Designer</p>
-              <ul class="team-icon">
-                <li>
-                  <a href="#"><svg><use href="sprite.svg#instagram"></use></svg></a>
-                </li>
-                <li>
-                  <a href="#"><svg><use href="sprite.svg#twitter"></use></svg></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><svg><use href="sprite.svg#facebook"></use></svg></a>
-                </li>
-                <li>
-                  <a href="#"><svg><use href="sprite.svg#linkedin"></use></svg></a>
-                </li>
-              </ul>
+                <h3 class="team-title-name">Михайло Єрмаков</h3>
+                <p class="team-position">UI Designer</p>
+                <ul class="team-icon">
+                  <li>
+                    <a href="#"
+                      ><svg><use href="sprite.svg#instagram"></use></svg
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><svg><use href="sprite.svg#twitter"></use></svg
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><svg><use href="sprite.svg#facebook"></use></svg
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><svg><use href="sprite.svg#linkedin"></use></svg
+                    ></a>
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
